@@ -7,3 +7,5 @@ fullnameOverride: ""
 # -- Number of replicas
 replicas: 3
 
+image:
+  ## -- aleo-exporter container image repository
