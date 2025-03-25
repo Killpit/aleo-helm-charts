@@ -2,28 +2,6 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-hook:
-  envVars: {}
-  # -- The number of replicas
-  replicaCount: 0
-  # -- Annotations to add to deployments
-  deploymentAnnotations: {}
-  # -- Annotations to add to the pods
-  podAnnotations: {}
-  # -- Label to add to the pods
-  podLabels: {}
-  # -- The liveness probes
-  livenessProbe:
-    httpGet:
-      path: /hook/version
-      port: http
-  # -- The readiness probes
-  readinessProbe:
-    httpGet:
-      path: /hook/health
-      port: http
-    timeoutSeconds: 5
-
 image:
   # -- The image repository
   repository: atatekeli/aleo-zk-compliance
